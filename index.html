@@ -113,10 +113,10 @@
         <h1>Create Your BloxdForge Account</h1>
         <p>Join the adventure! Start by creating your account below.</p>
         <form id="create-account-form">
-            <label for="username">Username (5-8 characters):</label>
+            <label for="username">Username (1-12 characters):</label>
             <input type="text" id="username" required><br><br>
 
-            <label for="password">Password (4-9 characters):</label>
+            <label for="password">Password (8-20 characters):</label>
             <input type="password" id="password" required><br><br>
 
             <label for="discord-username">Discord Username:</label>
@@ -162,13 +162,13 @@
             const discordUsername = document.getElementById('discord-username').value;
             const pfpFile = document.getElementById('pfp').files[0];
 
-            if (username.length < 5 || username.length > 8) {
-                alert("Username must be between 5 and 8 characters.");
+            if (username.length < 1 || username.length > 12) {
+                alert("Username must be between 1 and 12 characters.");
                 return;
             }
 
-            if (password.length < 4 || password.length > 9) {
-                alert("Password must be between 4 and 9 characters.");
+            if (password.length < 8 || password.length > 20) {
+                alert("Password must be between 8 and 20 characters.");
                 return;
             }
 
